@@ -1,0 +1,20 @@
+{
+    "editor.wrappingIndent": "none",
+    "html.format.wrapAttributes": "aligned-multiple",
+    "html.format.wrapLineLength": 0,
+    "editor.insertSpaces": false,
+    "editor.folding": false,
+    "prettier.bracketSpacing": false,
+    "prettier.printWidth": 120,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "html.format.preserveNewLines": false,
+    "html.format.indentHandlebars": false,
+    "html.format.maxPreserveNewLines": null,
+    "html.format.extraLiners": "",
+    "javascript.autoClosingTags": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+    "typescript.autoClosingTags": false,
+    "editor.autoIndent": false,
+	"files.eol": "\n",
+	"jshint.enable": false
+}
