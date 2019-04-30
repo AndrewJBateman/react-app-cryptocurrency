@@ -1,44 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Crypto App
 
-## Available Scripts
+Creates a crypto currency app using React.
 
-In the project directory, you can run:
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## General info
 
-### `npm test`
+Lists prices of cryptocurrencies, depending on setup of API http request.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Example screenshot](./img/crypto-api.png).
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* [Node.js v10.15.3](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [React v16.8.6](https://reactjs.org/) Javascript library.
 
-### `npm run eject`
+* [Axios v0.18.0](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `npm start` Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* `npm run build` Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Code Examples
 
-## Learn More
+* extract of `App.js` - axios http asynchronous call to cryptocurrency API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+/*
+function will be carried out once app loads
+axios is promise-based so then function used
+cryptocompare returns price of 3 bitcoins compared to the US $.
+*/
+componentDidMount() {
+	const fsymsList = 'BTC,XRP,BCH,ETH,ZEC,EOS,XMR,ETC,LTC,DASH,QTUM,NEO,XLM,TRX,ADA,BTS,USDT,XUC,PAX,IOT'
+	axios
+		.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=' + fsymsList + '&tsyms=USD')
+    .then(res => {
+      const cryptos = res.data;
+      console.log(cryptos);
+      this.setState({cryptos: cryptos});
+    });
+}
+
+```
+
+## Status & To-Do List
+
+* Status: working app that gets api data. `The aarning '_Each child in a list should have a unique "key" prop_' needs to be corrected.
+
+## Inspiration
+
+* [Gary Simon of Coursetro: React CryptoCurrency Tutorial - Display Exchange Data with an API](https://www.youtube.com/watch?v=18DkUJ669kc&t=120s)
+
+## Contact
+
+Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
