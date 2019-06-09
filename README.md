@@ -1,4 +1,4 @@
-# React Crypto App
+# React App Cryptocurrency
 
 Creates a crypto currency app using React.
 
@@ -25,11 +25,11 @@ Lists prices of cryptocurrencies, depending on setup of API http request.
 
 ## Technologies
 
-* [Node.js v10.15.3](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
+* [Node.js v12.3.1](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 
 * [React v16.8.6](https://reactjs.org/) Javascript library.
 
-* [Axios v0.18.0](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
+* [Axios v0.19.0](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
 ## Setup
 
@@ -49,10 +49,10 @@ axios is promise-based so then function used
 cryptocompare returns price of 3 bitcoins compared to the US $.
 */
 componentDidMount() {
-	const fsymsList = 'BTC,XRP,BCH,ETH,ZEC,EOS,XMR,ETC,LTC,DASH,QTUM,NEO,XLM,TRX,ADA,BTS,USDT,XUC,PAX,IOT'
-	axios
-		.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=' + fsymsList + '&tsyms=USD')
-    .then(res => {
+  const fsymsList = 'BTC,XRP,BCH,ETH,ZEC,EOS,XMR,ETC,LTC,DASH,QTUM,NEO,XLM,TRX,ADA,BTS,USDT,XUC,PAX,IOT'
+    axios
+      .get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=' + fsymsList + '&tsyms=USD')
+      .then(res => {
       const cryptos = res.data;
       console.log(cryptos);
       this.setState({cryptos: cryptos});
@@ -63,7 +63,7 @@ componentDidMount() {
 
 ## Status & To-Do List
 
-* Status: working app that gets api data. `The aarning '_Each child in a list should have a unique "key" prop_' needs to be corrected.
+* Status: working app that gets API data. `The warning '_Each child in a list should have a unique "key" prop_' needs to be corrected.
 
 ## Inspiration
 
