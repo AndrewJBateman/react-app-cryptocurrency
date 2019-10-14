@@ -1,6 +1,6 @@
 # React App Cryptocurrency
 
-Creates a crypto currency app using React.
+Creates a crypto currency app using React. npm dependencies updated oct 2019.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -17,7 +17,7 @@ Creates a crypto currency app using React.
 
 ## General info
 
-Lists prices of cryptocurrencies, depending on setup of API http request.
+Lists prices of cryptocurrencies, depending on setup of API http request. Here a range of cryptocurrency proces are listed againgst the US dollar.
 
 ## Screenshots
 
@@ -27,7 +27,7 @@ Lists prices of cryptocurrencies, depending on setup of API http request.
 
 * [Node.js v12.3.1](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 
-* [React v16.8.6](https://reactjs.org/) Javascript library.
+* [React v16.10.2](https://reactjs.org/) Javascript library.
 
 * [Axios v0.19.0](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
@@ -63,12 +63,14 @@ componentDidMount() {
 
 ## Status & To-Do List
 
-* Status: working app that gets API data. `The warning '_Each child in a list should have a unique "key" prop_' needs to be corrected.
+* Status oct 2019: working app that gets API data with no errors or warnings.
 
 ## Inspiration
 
-* [Gary Simon of Coursetro: React CryptoCurrency Tutorial - Display Exchange Data with an API](https://www.youtube.com/watch?v=18DkUJ669kc&t=120s)
+* [Gary Simon of Coursetro: React CryptoCurrency Tutorial - Display Exchange Data with an API sept 2017](https://www.youtube.com/watch?v=18DkUJ669kc&t=120s)
+
+* [CryptoCompare API](https://min-api.cryptocompare.com) for cryptocurrency prices.
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
