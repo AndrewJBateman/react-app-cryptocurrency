@@ -1,20 +1,26 @@
 # :zap: React App Cryptocurrency
 
-* Creates a crypto currency app using React
-* npm dependencies updated oct 2019.
+* Crypto currency app using React
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/react-app-cryptocurrency?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/react-app-cryptocurrency?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/react-app-cryptocurrency?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/react-app-cryptocurrency?style=plastic)
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: React App Cryptocurrency](#zap-react-app-cryptocurrency)
+	* [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+	* [:books: General info](#books-general-info)
+	* [:camera: Screenshots](#camera-screenshots)
+	* [:signal_strength: Technologies](#signal_strength-technologies)
+	* [:floppy_disk: Setup](#floppy_disk-setup)
+	* [:computer: Code Examples](#computer-code-examples)
+	* [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+	* [:clap: Inspiration](#clap-inspiration)
+	* [:file_folder: License](#file_folder-license)
+	* [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -27,11 +33,12 @@
 ## :signal_strength: Technologies
 
 * [Node.js v12](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
-* [React v16](https://reactjs.org/) Javascript library.
-* [Axios v0.19.0](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
+* [React v17](https://reactjs.org/) Javascript library.
+* [Axios v0.21.1](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
 ## :floppy_disk: Setup
 
+* API does not require an API key.
 * `npm start` Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * `npm run build` Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
@@ -61,13 +68,18 @@ componentDidMount() {
 
 ## :clipboard: Status & To-Do List
 
-* Status oct 2019: working app that gets API data with no errors or warnings.
+* Status: Working
+* To-Do: nothing
 
 ## :clap: Inspiration
 
 * [Gary Simon of Coursetro: React CryptoCurrency Tutorial - Display Exchange Data with an API sept 2017](https://www.youtube.com/watch?v=18DkUJ669kc&t=120s)
 * [CryptoCompare API](https://min-api.cryptocompare.com) for cryptocurrency prices.
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
