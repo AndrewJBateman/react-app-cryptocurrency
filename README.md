@@ -34,7 +34,7 @@
 
 * [Node.js v12](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 * [React v17](https://reactjs.org/) Javascript library.
-* [Axios v0.21.1](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
+* [Axios v0.26.1](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
 ## :floppy_disk: Setup
 
@@ -69,7 +69,7 @@ componentDidMount() {
 ## :clipboard: Status & To-Do List
 
 * Status: Working
-* To-Do: nothing
+* To-Do: Nothing
 
 ## :clap: Inspiration
 
