@@ -32,7 +32,7 @@
 
 ## :signal_strength: Technologies
 
-* [Node.js v12](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
+* [Node.js v14](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 * [React v17](https://reactjs.org/) Javascript library.
 * [Axios v0.26.1](https://www.npmjs.com/package/axios) promise based HTTP client used to get crypto prices from axternal API.
 
@@ -68,7 +68,7 @@ componentDidMount() {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working. Deployed to Guthub-Pages
 * To-Do: Nothing
 
 ## :clap: Inspiration
