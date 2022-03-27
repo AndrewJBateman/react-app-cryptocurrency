@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-app-cryptocurrency/static/css/main.393ea561.css",
+    "main.js": "/react-app-cryptocurrency/static/js/main.993759d7.js",
+    "index.html": "/react-app-cryptocurrency/index.html",
+    "main.393ea561.css.map": "/react-app-cryptocurrency/static/css/main.393ea561.css.map",
+    "main.993759d7.js.map": "/react-app-cryptocurrency/static/js/main.993759d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.393ea561.css",
+    "static/js/main.993759d7.js"
+  ]
+}
